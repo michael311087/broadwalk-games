@@ -1,16 +1,19 @@
 /* Google fonts import */
-@import url(@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
 
-/* CSS variables */
+/* CSS Variables */
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
     --primary-color: #3a2620; /* dark brown */
-    --secondary-color:#aa9581; /* light brown */
-    --highlight-color:#416a8e; /* light blue */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
 
-body { 
+/* Global styles */
+
+body {
     font-family: var(--primary-font);
 }
 
@@ -22,5 +25,17 @@ h3 {
 }
 
 .sub-heading-color {
-    color: var(--highlight-color)
+    color: var(--highlight-color);
+}
+
+/* grid visualisation CSS for testing */
+
+.container,
+.row {
+    border: 2px solid black;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
 }
