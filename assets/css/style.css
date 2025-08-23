@@ -70,6 +70,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
 
 /* grid visualisation CSS for testing */
 
@@ -97,6 +104,7 @@ h2 {
     /* make all service cards the same height */
     #services .card-body {
         min-height: auto;
+    }
 }
 
 /* xl devices (large desktop, 1200px and up */
@@ -104,6 +112,7 @@ h2 {
     /* make all service cards the same height */
     #services .card-body {
         min-height: 220px;
+    }
 }
 
 /* xxl devices (large desktops, 1400px and up */
@@ -111,5 +120,5 @@ h2 {
     /* make all service cards the same height */
     #services .card-body {
         min-height: 195px;
+    }
 }
- 
