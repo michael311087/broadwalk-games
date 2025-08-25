@@ -68,6 +68,12 @@ h2 {
     color: white;
 }
 
+/*Events form*/
+
+#events-form .form-control:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 5px var(--highlight-color-light);
+}
 
 /* Navbar */
 
@@ -154,6 +160,18 @@ h2 {
 } */
 
 /* Media queries */
+
+@media screen and (max-width: 320px) {
+  #events {
+    font-size: 0.8rem;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+
+
 /* Medium devices (tables, 768px and up */
 @media screen and (min-width: 768px) {
     /* make all service cards the same height */
