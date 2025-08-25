@@ -107,6 +107,40 @@
     <!-- main element to hold all key sections of the game library page,
          it is not part of the grid structure -->
     <main>
+
+        <!-- Reservation Form Section -->
+    <section id="reserve-game" class="container section">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <h2 class="display-6 text-center">Reserve a Board Game</h2>
+                <form action="success.html" method="GET" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input id="name" name="name" type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input id="email" name="email" type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="game" class="form-label">Select game:</label>
+                        <select id="game" name="game" class="form-select" required>
+                            <option value="" disabled selected>Select a game</option>
+                            <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                            <option value="mystic-woods">Mystic Woods</option>
+                            <option value="captains-gambit">Captain's Gambit</option>
+                            <option value="critter-quest">Critter Quest</option>
+                            <option value="settlers-of-catan">Settlers of Catan</option>
+                            <option value="monopoly">Monopoly</option>
+                            <option value="exploding-kittens">Exploding Kittens</option>
+                            <option value="cluedo">Cluedo</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn custom-button-filled w-100">Reserve</button>
+                </form>
+            </div>
+        </div>
+    </section>
         <!-- New Games section -->
         <section id="new-games" class="container section">
             <div class="row">
